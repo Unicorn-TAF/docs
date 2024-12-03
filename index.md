@@ -21,7 +21,7 @@ With ability to use and switch between supported reporters: Allure, ReportPortal
 
 > Feel free to contact [dobriy88@yandex.ru](mailto:dobriy88@yandex.ru) with your feedback.
 
-Please also refer to **[MIGRATION NOTES](docs/migration/migration-to-taf-v4/)** in case of update to Taf.Core 4.x from older versions.
+Please also refer to **[MIGRATION NOTES](migration/migration-to-taf-v4/)** in case of update to Taf.Core 4.x from older versions.
 
 ### Features
 
