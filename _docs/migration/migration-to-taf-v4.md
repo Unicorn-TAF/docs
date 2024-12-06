@@ -22,7 +22,7 @@ V4 of TAF Core has some breaking changes that will require modifications to your
 ### Migration Steps
 
 1. **Update Code**: Update your code to use the new API methods.
- - Replace `Unicorn.Taf.Core.Logging.Logger` with `Unicorn.Taf.Core.Logging.ULog` (see [documentation](../../docs/core/Logging/)).
+ - Replace `Unicorn.Taf.Core.Logging.Logger` with `Unicorn.Taf.Core.Logging.ULog` (see [documentation](../../core/logging/)).
  - `TrxCreator` is no longer used. `dotnet test` trx generation abilities could be used instead.
  - `IsPositiveMatcher` could be replaced with `IsGreaterThanMatcher`
  - Update references to TAF events for steps, suites, tests and fixtures. Now all framework events are located in single class `Unicorn.Taf.Core.TafEvents`.
@@ -58,8 +58,8 @@ V4 of TAF Core has some breaking changes that will require modifications to your
  - Replace `Unicorn.AllureAgent` with `Unicorn.Reporting.Allure` (version 3.x).
 
 2. **Update your code**: Update your code to use the new APIs.
- - Replace `ReportPortalReporterInstance` with `ReportPortalReporter`.
- - Replace `AllureReporterInstance` with `AllureReporter`.
+ - Replace `ReportPortalReporterInstance` with `ReportPortalReporter` (see [documentation](../../reporting/report-portal-integration/)).
+ - Replace `AllureReporterInstance` with `AllureReporter` (see [documentation](../../reporting/allure-report-integration/))..
 
 ## V4 packages support
 Core V4 is supported by next unicorn packages versions:

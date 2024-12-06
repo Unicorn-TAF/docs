@@ -1,7 +1,7 @@
 ---
 title: ReportPortal integration
 category: Reporting
-order: 1
+order: 2
 ---
 
 Place ReportPortal.config.json configuration file to directory with test assemblies. Sample content is presented below:
