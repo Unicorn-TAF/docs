@@ -29,6 +29,7 @@ V4 of TAF Core has some breaking changes that will require modifications to your
 
 2. **Update your dependencies**: Update versions of all used unicorn packages in your `*.csproj` files. (see section [V4 packages support](#v4-packages-support))
 
+3. _Optionally could be removed inheritance of test suite classes from `TestSuite`. It's not longer necessary_.
 
 ## UI
 
@@ -59,7 +60,8 @@ V4 of TAF Core has some breaking changes that will require modifications to your
 
 2. **Update your code**: Update your code to use the new APIs.
  - Replace `ReportPortalReporterInstance` with `ReportPortalReporter` (see [documentation](../../reporting/report-portal-integration/)).
- - Replace `AllureReporterInstance` with `AllureReporter` (see [documentation](../../reporting/allure-report-integration/))..
+ - Replace `AllureReporterInstance` with `AllureReporter` (see [documentation](../../reporting/allure-report-integration/))
+ - For TestIT reporter replace `ReporterInstance` with `TestItReporter`
 
 ## V4 packages support
 Core V4 is supported by next unicorn packages versions:
