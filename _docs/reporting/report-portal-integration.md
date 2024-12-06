@@ -4,7 +4,7 @@ category: Reporting
 order: 2
 ---
 
-Place ReportPortal.config.json configuration file to directory with test assemblies. Sample content is presented below:
+Place `ReportPortal.config.json` configuration file to directory with test assemblies. Sample content is presented below:
 
 ```json
 {

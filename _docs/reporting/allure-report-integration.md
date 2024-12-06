@@ -4,7 +4,7 @@ category: Reporting
 order: 1
 ---
 
-Place allureConfig.json configuration file to directory with test assemblies. Sample content is presented below:
+Place `allureConfig.json` configuration file to directory with test assemblies. Sample content is presented below:
 
 ```json
 {
