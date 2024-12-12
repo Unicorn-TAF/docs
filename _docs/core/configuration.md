@@ -74,7 +74,7 @@ _Default:_ **empty** (all)
 > if `tests` is specified, `tags` and `categories` properties are ignored.
 
 ### userDefined
-Parent for user defined properties. Any number of custom properties as key-value pair could be specified
+Parent for user defined properties. Any number of custom properties as key-value pair could be specified. Value of specific user defined setting could be retrieved by calling `Config.GetUserDefinedSetting`.
 
 ## Example of properties file
 ```json
