@@ -71,3 +71,5 @@ Core V4 is supported by next unicorn packages versions:
  - Unicorn.UI.Win 4.0.0+
  - Unicorn.TestAdapter 4.0.0+
  - Unicorn.Reporting.ReportPortal 4.0.0+
+ - Unicorn.Reporting.Allure 3.0.0+
+ - Unicorn.Reporting.TestIT 2.0.0+
