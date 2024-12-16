@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'Iosevka Mono';
+    src: url('../fonts/IosevkaMono-NormalRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 pre, code, tt {
-	font-family: Inconsolata, Consolas, Courier, "Courier New", "Liberation Mono", monospace;
+	font-family: "Iosevka Mono", monospace;
 	font-size: 0.85em;
 	white-space: pre-wrap;
 	border-radius: 2px;
@@ -34,4 +41,7 @@ li > code,
 p > code {
 	padding: 4px 6px;
 	white-space: nowrap;
+	border-radius: 5px;
+	background-color: whitesmoke;
+	color: black;
 }
