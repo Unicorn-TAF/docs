@@ -48,4 +48,10 @@ dotnet test -t --filter Category=Smoke
 
 # run all tests which FullyQualifiedName does not contain "WebTests"
 dotnet test --filter FullyQualifiedName!~WebTests
+
+# run all tests and save results in .trx file. To run tests use specified runsettings file
+dotnet test --logger "trx;logfilename=testResults.trx" --settings <SETTINGS_FILE>
+
+# run all ApiTests tests on Release configuration skipping build and with detail logging in console
+dotnet test --no-build -c Release --logger "console;verbosity=detailed" --filter Category=ApiTests
 ```
