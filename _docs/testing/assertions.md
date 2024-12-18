@@ -1,6 +1,7 @@
 ---
 title: Assertions
 category: Testing
+weight: 3
 order: 4
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Migration to TAF v4
-category: Migration
+category: "Migration Notes"
+weight: 1
 order: 1
 ---
 

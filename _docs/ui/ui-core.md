@@ -1,6 +1,7 @@
 ---
 title: UI Core
 category: UI
+weight: 5
 order: 1
 ---
 
@@ -19,9 +20,9 @@ Elements search is built over `BaseSearchContext` class which provides methods t
 There are two ways to search elements: using search context direct methods calls or using page object approach.
 
 ### Search context methods
- - **Find<T>**: Finds control of specified type by specified locator during implicitly wait timeout.
+ - **Find\<T\>**: Finds control of specified type by specified locator during implicitly wait timeout.
  - **Find**: Finds and returns generic IControl by specified locator during implicitly wait timeout.
- - **FindList<T>**: Finds list of controls of specified type by specified locator during implicitly wait timeout.
+ - **FindList\<T\>**: Finds list of controls of specified type by specified locator during implicitly wait timeout.
  - **TryGetChild**: Immediately and safely tries to get control by specified locator with optional `out` control parameter.
 
 Control locator is presented by `Unicorn.UI.Core.Driver.ByLocator` which consists of search method and search query. Supported locators are: 

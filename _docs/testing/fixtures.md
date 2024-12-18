@@ -1,6 +1,7 @@
 ---
 title: Fixtures
 category: Testing
+weight: 3
 order: 3
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Test adapter
 category: Testing
+weight: 3
 order: 5
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Web UI
 category: UI
+weight: 5
 order: 3
 ---
 

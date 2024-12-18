@@ -1,6 +1,7 @@
 ---
 title: Rest API base functionality
 category: API
+weight: 4
 order: 1
 ---
 From the box [Unicorn.Backend](https://www.nuget.org/packages/Unicorn.Backend) provides with base rest service implementation which could help top send requests to the API and get responses. 

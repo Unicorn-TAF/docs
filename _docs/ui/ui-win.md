@@ -1,6 +1,7 @@
 ---
 title: Windows UI
 category: UI
+weight: 5
 order: 4
 ---
 

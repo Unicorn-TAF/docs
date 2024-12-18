@@ -1,6 +1,7 @@
 ---
 title: Assertions on UI elements
 category: UI
+weight: 5
 order: 2
 ---
 

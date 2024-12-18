@@ -1,6 +1,7 @@
 ---
 title: Sessions handling
 category: API
+weight: 4
 order: 2
 ---
 

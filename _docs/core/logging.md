@@ -1,6 +1,7 @@
 ---
 title: Logging
 category: Core
+weight: 2
 order: 2
 ---
 

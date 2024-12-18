@@ -1,6 +1,7 @@
 ---
 title: Assertions on API responses
 category: API
+weight: 4
 order: 3
 ---
 

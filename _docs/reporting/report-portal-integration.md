@@ -1,6 +1,7 @@
 ---
 title: ReportPortal integration
 category: Reporting
+weight: 6
 order: 2
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Tests
 category: Testing
+weight: 3
 order: 2
 ---
 

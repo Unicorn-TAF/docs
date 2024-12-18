@@ -1,6 +1,7 @@
 ---
 title: Test suites
 category: Testing
+weight: 3
 order: 1
 ---
 

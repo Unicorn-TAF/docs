@@ -1,6 +1,7 @@
 ---
 title: Allure report integration
 category: Reporting
+weight: 6
 order: 1
 ---
 

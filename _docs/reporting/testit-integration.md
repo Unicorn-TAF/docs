@@ -1,6 +1,7 @@
 ---
 title: TestIT integration
 category: Reporting
+weight: 6
 order: 3
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Configuration
 category: Core
+weight: 2
 order: 1
 ---
 
