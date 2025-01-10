@@ -5,6 +5,47 @@
     font-style: normal;
 }
 
+.code-header {
+  
+  color: #FAFAFA;
+  background-color: #404145;
+  border-radius: 3px;
+  padding: 0 10px 0 10px;
+  font-family: "Iosevka Mono",monospace,sans-serif;
+  margin-right: 10px;
+  margin-top: -12.5px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  position: absolute;
+  right: 30px;
+
+  /* the label block */
+  span {
+
+    /* label text */
+    &::after {
+      content: attr(data-label-text);
+      font-size: 0.85em;
+      font-weight: 600;
+    }
+  }
+
+	.copy-code {
+    color: #FAFAFA;
+    background: none;
+    cursor:pointer;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto; 
+    margin-right: 0;
+  }
+}
+
+.highlighter-rouge > div.highlight {
+  overflow: visible;
+}
+
 pre, code, tt {
 	font-family: "Iosevka Mono", monospace;
 	font-size: 0.85em;

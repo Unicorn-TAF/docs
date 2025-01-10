@@ -8,11 +8,11 @@
 		{% seo %}
 		{% feed_meta %}
 
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
@@ -22,6 +22,8 @@
 			</script>
 			<script async src='https://www.google-analytics.com/analytics.js'></script>
 		{% endif %}
+
+		<script src="{{ "/scripts/copy-code.js " | prepend: site.baseurl }}" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -75,7 +77,11 @@
 				<h3>{{ page.title }}</h3>
 			</div>
 			<article class="content">
-				{{ content }}
+				{% capture _content %}
+					{% include refactor-content.html content=content %}
+				{% endcapture %}
+
+				{{ _content }}
 			</article>
 		</section>
 

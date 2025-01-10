@@ -2,9 +2,9 @@
 # Site
 
 title: Unicorn.TAF
-url: "https://docs.unicorn-taf.github.io"
-baseurl:
-google_analytics_key:
+url: "https://unicorn-taf.github.io"
+baseurl: /docs
+google_analytics_key: G-R82HWQMSP3
 show_full_navigation: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
