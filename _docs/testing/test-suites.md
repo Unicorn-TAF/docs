@@ -6,7 +6,7 @@ order: 1
 ---
 
 Test suite is a class-container of tests. It is used to group tests together and to provide metadata about the tests. Test suites can be used to run tests in parallel, to skip tests, and to provide a summary of the test results.
-Test suites are defined using the `[Suite]` attribute. The `[Suite]` attribute takes a string parameter that specifies the name of the test suite. If suite name is not specified then type name is used as test sute name.
+Test suites are defined using the `[Suite]` attribute. The `[Suite]` attribute takes a string parameter that specifies the name of the test suite. If suite name is not specified then type name is used as test suite name.
 
 ## Suite metadata
 It's possible to specify test suite metadata using the `[Metadata]` attribute. The `[Metadata]` attribute takes two parameters: the name of the metadata and the value of the metadata. Metadata can be used to provide additional information about the test suite, such as the description of the test suite, the site link, etc.

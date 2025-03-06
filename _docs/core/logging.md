@@ -7,7 +7,7 @@ order: 2
 
 `ULog` is a main framework logger that provides a simple way to log messages in your tests. It supports various logging levels such as _Trace_, _Debug_, _Info_, _Warning_, _Error_. You can also customize the logger to suit your needs.
 
-By default build-in console logger is sused with _Debug_ level
+By default build-in console logger is used with _Debug_ level
 
 ## Logger customization
 

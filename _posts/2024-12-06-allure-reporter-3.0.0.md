@@ -3,7 +3,7 @@ title: Reporting.Allure 3.0.0
 type: major
 ---
 
-Major release of Reporting.Allure library with support of Taf v4 and retargeted to netstandard 2.0
+Major release of Reporting.Allure library with support of TAF v4 and retargeted to netstandard 2.0
 
 **Features:**
 

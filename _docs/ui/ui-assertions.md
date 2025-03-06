@@ -5,7 +5,7 @@ weight: 5
 order: 2
 ---
 
-[Unicorn.UI.Core](https://www.nuget.org/packages/Unicorn.UI.Core) has collection of UI checking matchers compatible with [core assertions mechanism](../../testing/assertions). The matchers can be used to validate presense, state or properties of UI elements and does not depend on the underlying UI framework. Here is an example of how to use these assertions:
+[Unicorn.UI.Core](https://www.nuget.org/packages/Unicorn.UI.Core) has collection of UI checking matchers compatible with [core assertions mechanism](../../testing/assertions). The matchers can be used to validate presence, state or properties of UI elements and does not depend on the underlying UI framework. Here is an example of how to use these assertions:
 
 ```csharp
 Assert.That(uiElement, UI.Control.HasText("Some expected text"));

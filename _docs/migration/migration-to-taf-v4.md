@@ -18,7 +18,7 @@ V4 of TAF Core has some breaking changes that will require modifications to your
 
 1. **Obsolete code removal**: Removed legacy `Logger`, `TrxCrteator`, `IsPositiveMatcher`
 
-2. **API Changes**: Some of the API methods have been changed in part of taf events. You will need to update your code to use the new API methods.
+2. **API Changes**: Some of the API methods have been changed in part of TAF events. You will need to update your code to use the new API methods.
 
 ### Migration Steps
 
@@ -36,7 +36,7 @@ V4 of TAF Core has some breaking changes that will require modifications to your
 
 ### Breaking Changes
 
-1. **API Changes**: Some of the API methods have been changed for Screenshotters and ImplicitWait timeouts handling. You will need to update your code to use the new API methods.
+1. **API Changes**: Some of the API methods have been changed for screenshotters and ImplicitWait timeouts handling. You will need to update your code to use the new API methods.
 
 ### Migration Steps
 

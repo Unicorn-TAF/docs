@@ -5,12 +5,12 @@ weight: 5
 order: 1
 ---
 
-Unicorn has Core UI library in its ecosystem which provides generic mechanism and utilities for platform depenent UI testing modules and contains common utilities and UI assertions.
+Unicorn has Core UI library in its ecosystem which provides generic mechanism and utilities for platform dependent UI testing modules and contains common utilities and UI assertions.
 
 ## Common interfaces
 
  - **ISearchContext**: Represent UI search context to search child elements from.
- - **IDriver**: Interface for specific UI platfrom driver.
+ - **IDriver**: Interface for specific UI platform driver.
  - **IControl**: Interface for specific UI controls.
 
 ## Search mechanism
@@ -139,4 +139,32 @@ window.Wait(Until.Disabled, TimeSpan.FromMinutes(1),
 // chain waits
 window.Wait(Until.AttributeContains, "value", "someValue")
     .Wait(CustomConditions.HasText, "expectedText", TimeSpan.FromSeconds(10));
+```
+
+### Loading indicators handling
+Many web applications use loading indicators to indicate that some operation is in progress. Handling these indicators is an important part of UI automation. To correctly handle such indicators it's not enough to wait for the indicator to disappear, often there is some delay before the indicator appears and it's important to wait for it to appear as well. This ensures that the operation has completed and the UI is in a stable state.  
+To handle loading indicators Unicorn has built-in `LoaderHandler` class. This class allows you to wait for a loading indicator to appear and then disappear before proceeding with further actions. 
+
+> Let's suppose we have:  
+> - loading indicator with the ID **"loading-indicator"**
+> - **popUpWindow** - is a control that represents the pop-up window and where we need to wait for the loading indicator to appear and disappear
+
+The code snippet below demonstrates how to use the `LoaderHandler` class in this case:
+```csharp
+new LoaderHandler(
+        () => TitleDropdown.TryGetChild(ByLocator.Id("loading-indicator")),
+        () => !TitleDropdown.TryGetChild(ByLocator.Id("loading-indicator")))
+    .WaitFor(TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(10));
+```
+
+This code safely waits for 2 seconds until element with ID "loading-indicator" appears and then waits for 10 seconds until it disappears. If the loading indicator does not appear within 2 seconds the method will not fail (sometimes catching appearance is tricky and it could be too fast to be detected). If the loading indicator does not disappear within 10 seconds, the `WaitFor` method will throw an exception.
+
+It's possible also to wait with custom polling interval, just use corresponding `WaitFor` overload:
+
+```csharp
+new LoaderHandler(
+        () => TitleDropdown.TryGetChild(ByLocator.Id("loading-indicator")),
+        () => !TitleDropdown.TryGetChild(ByLocator.Id("loading-indicator")))
+    .WaitFor(TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(30), TimeSpan.FromSeconds(1));
+);
 ```

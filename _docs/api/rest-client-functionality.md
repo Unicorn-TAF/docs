@@ -32,7 +32,7 @@ RestResponse response = client.SendRequest(HttpMethod.Get, "/api/users/1");
  - **AsJObject**: response content as `JObject` (Newtonsoft.Json library)
 
 
-### Donwload files
+### Download files
 To download files you can use `DownloadFile` method. This method takes `endpoint` and `destinationFolder` as parameters and returns `string` with original filename. Filename is taken from `Headers.ContentDisposition.FileNameStar`, in case it's not specified endpoint tail part is used as filename.
 
 Here is an example of how to use it:

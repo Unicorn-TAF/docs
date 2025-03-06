@@ -3,7 +3,7 @@ title: Reporting.TestIT 2.0.0
 type: major
 ---
 
-Major release of Reporting.TestIT library with support of Taf v4
+Major release of Reporting.TestIT library with support of TAF v4
 
 **Features:**
 

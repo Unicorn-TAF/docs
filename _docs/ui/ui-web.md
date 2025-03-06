@@ -15,7 +15,7 @@ The package contains:
 
 ## PageObject
 
-Page object supports inheritance, so all derived classes initialize controls described in base class also. Any page should be derived from `WebPage`. Page properties like relative url and title could be specified using `[PageInfo]` attribute. Url property is implicitly used to navigate to the page from `WebSite` instance. Title property is implicitly used in page `Opened` property indicating that page is opened successfully.
+Page object supports inheritance, so all derived classes initialize controls described in base class also. Any page should be derived from `WebPage`. Page properties like relative URL and title could be specified using `[PageInfo]` attribute. URL property is implicitly used to navigate to the page from `WebSite` instance. Title property is implicitly used in page `Opened` property indicating that page is opened successfully.
 
 ```csharp
 [PageInfo("test-ui-apps.html", "Test UI apps | Unicorn.TAF")]

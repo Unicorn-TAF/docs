@@ -5,7 +5,7 @@ weight: 4
 order: 2
 ---
 
-Usually to get response from API enpoint it's necessary to provide some kind of session data, like token, cookies, etc. There is a built-in mechanism to handle sessions in the RestClient. 
+Usually to get response from API endpoint it's necessary to provide some kind of session data, like token, cookies, etc. There is a built-in mechanism to handle sessions in the RestClient. 
 
 ## Custom session and session management
 

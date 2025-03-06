@@ -5,7 +5,7 @@ weight: 4
 order: 3
 ---
 
-[Unicorn.Backend](https://www.nuget.org/packages/Unicorn.Backend) has collection of rest api matchers compatible with [core assertions mechanism](../../testing/assertions). The matchers can be used to validate the response of the API: status code, response body, response headers, and more. Here is an example of how to use these assertions:
+[Unicorn.Backend](https://www.nuget.org/packages/Unicorn.Backend) has collection of rest API matchers compatible with [core assertions mechanism](../../testing/assertions). The matchers can be used to validate the response of the API: status code, response body, response headers, and more. Here is an example of how to use these assertions:
 
 ```csharp
 RestResponse userResponse; // get response from the API

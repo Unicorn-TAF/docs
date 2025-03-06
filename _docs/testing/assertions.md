@@ -16,7 +16,7 @@ Basically mechanism consists of two parts: **assertion methods** and so called *
 `Assert.Fail` - just syntax sugar for `throw new AssertionException`
 
 ### Assertions with matchers
-More syntaxically understandable and self-describable assertion approach is combination of `Assert.That` method with a matcher. Matchers are sort of specific checks under objects. There are type specific matchers which perform check under object of specific type or it's inheritors and could not be applied to other types (there will be compile-time errors). Other group of matchers are type independent and designed to check general things, for example nullability or type of expected object. There is also a special matcher, which designed to negate action of any matcher, it allows to have just one implementation to perform both positive and negative assertion. In case of error `Assert.That` will throw an exception describing initial check and actual result. In case of **Steps** feature usage the mechanism allows to use just few built-in steps to report all checks in human readable form.
+More syntactically understandable and self-describable assertion approach is combination of `Assert.That` method with a matcher. Matchers are sort of specific checks under objects. There are type specific matchers which perform check under object of specific type or it's inheritors and could not be applied to other types (there will be compile-time errors). Other group of matchers are type independent and designed to check general things, for example nullability or type of expected object. There is also a special matcher, which designed to negate action of any matcher, it allows to have just one implementation to perform both positive and negative assertion. In case of error `Assert.That` will throw an exception describing initial check and actual result. In case of **Steps** feature usage the mechanism allows to use just few built-in steps to report all checks in human readable form.
 Here are some examples:
 
 ```csharp
@@ -66,7 +66,7 @@ But: element at index 1:was value_2
 ```
 
 ## Assertions chain
-Assertions chain allows to perfrom multiple assertions silently and to get overall result after all assertion are called. If there are any failed assertions in chain the total assertion will fail listing all fails in the chain. This allows to gather more useful information in case of group of similar checks or sequence of checks under the same element.
+Assertions chain allows to perform multiple assertions silently and to get overall result after all assertion are called. If there are any failed assertions in chain the total assertion will fail listing all fails in the chain. This allows to gather more useful information in case of group of similar checks or sequence of checks under the same element.
 Here is an example:
 
 ```csharp
