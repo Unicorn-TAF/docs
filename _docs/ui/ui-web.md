@@ -84,3 +84,26 @@ ExamplePage page = website.GetPage<ExamplePage>();
 // To navigate directly to the page by it's url it's enough to call
 ExamplePage page = website.NavigateTo<ExamplePage>();
 ```
+
+## Dynamic controls
+There are cases when one needs to implement some complex UI element such as Dropdown or DataGrid which is different from all other implementations and can't be implemented using standard controls. For such cases, it's possible to define a _dynamic_ control without creating a separate implementation. There are 3 complex controls which are implemented as dynamic controls: `DynamicDropdown`, `DynamicDialog` and `DynamicDataGrid`.
+
+Example below is for DataGrid, all you need is just within PageObject class to define the control as:
+
+```csharp
+// Find top level control
+[ById("dg-demo-static-data")]  
+// And define sub-elements
+[DefineGrid(GridElement.Header, Using.WebTag, "th")]
+[DefineGrid(GridElement.Row, Using.WebCss, "tbody > tr")]
+[DefineGrid(GridElement.Cell, Using.WebCss, "td")]
+public DynamicDataGrid DataGrid { get; set; }
+```
+
+The whole logic of interaction with certain UI element is baked in corresponding dynamic element and there is no need to implement it, just to define necessary sub-elements.
+
+To define `DynamicDataGrid` sub-elements `[DefineGrid]` is used. It's possible to define _Header_, _Row_, _Cell_ and _Loader_ elements.
+
+To define `DynamicDropdown` sub-elements `[DefineDropdown]` is used. It's possible to define _ValueInput_, _ExpandCollapse_ button, _OptionsFrame_, dropdown _Option_ and _Loader_ elements.
+
+To define `DynamicDialog` sub-elements `[DefineDialog]` is used. It's possible to define _Title_, _Content_, _Accept_, _Decline_ and _Close_ buttons, _Loader_ elements.
