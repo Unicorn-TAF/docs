@@ -422,6 +422,11 @@ h4 svg {
 		background: $brand-colour;
 		color: #fff;
 	}
+
+	&.patch {
+		background: #d63535;
+		color: #fff;
+	}
 }
 
 blockquote {

@@ -74,3 +74,4 @@ defaults:
 types:
   - minor
   - major
+  - patch
