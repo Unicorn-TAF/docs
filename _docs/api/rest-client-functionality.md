@@ -65,3 +65,12 @@ public class DummyApiClient : RestClient
         SendRequest(HttpMethod.Get, $"/api/users/{id}");
 }
 ```
+
+
+### Disable SSL verification
+Usually when running tests on TEST or DEV environments SSL certificates are not available. To disable SSL verification for all requests made by `RestClient` you can call `DisableSslVerification`:
+
+```csharp
+DummyApiClient client = new DummyApiClient();
+client.DisableSslVerification();
+```
