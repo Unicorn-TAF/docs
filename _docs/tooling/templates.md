@@ -5,8 +5,6 @@ weight: 7
 order: 1
 ---
 
-# Unicorn Templates
-
 Templates are powerful feature that allow to create ready to use items like projects or classes with prefilled code saving time on some routine operations.
 To use unicorn templates install a package using `dotnet new install Unicorn.Taf.Templates`
 
@@ -101,7 +99,7 @@ Available template options:
   The namespace to place class in.  
   **Default**: `Company.Steps`
 
-# API module project
+# API
 
 ## Project
 
@@ -130,7 +128,7 @@ Available template options:
   The namespace to place class in.  
   **Default**: Company.ApiModule
 
-# Web UI module project
+# Web UI
 
 ## Project
 
@@ -183,7 +181,7 @@ Available template options:
   The namespace to place class in.  
   **Default**: `Company.WebModule`
 
-# Windows UI module
+# Windows UI
 
 ## Project
 
@@ -210,7 +208,7 @@ Available template options:
   The namespace to place class in  
   **Default**: `Company.WinModule`
 
-# Examples
+# Complex example
 
 Example below creates a solution with 3 projects:
 1. Tests project with already initialized reporting to Allure.
