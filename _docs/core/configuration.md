@@ -98,6 +98,20 @@ Parent for user defined properties. Any number of custom properties as key-value
 
 > If the config was loaded from inside of test run (for example in [TestAssembly] fixture) `tags`, `categories` and `tests` properties are ignored because test run scope is already defined and could not be changed from the test run.
 
+## Override config using environment variables (ver. 4.4.0+)
+It's possible to override some of the properties using corresponding environment variables which have higher priority for both default init and init from file.
+
+### UNICORN_TEST_TIMEOUT
+`testTimeout` prop override in minutes (could be fractional).
+### UNICORN_SUITE_TIMEOUT
+`suiteTimeout` prop override in minutes (could be fractional).
+### UNICORN_PARALLEL_BY
+`parallel` prop override. Could be: `None` or `Suite`
+### UNICORN_THREADS
+`threads` prop override.
+### UNICORN_TESTS_DEPENDENCY - Skip, DoNotRun, Run
+`testsDependency` prop override. Could be: `Skip`, `DoNotRun` or `Run`
+
 ## Reset
 
 It's possible to reset config by calling `Config.Reset()` method. This will remove all custom properties and set all properties to their default values.
