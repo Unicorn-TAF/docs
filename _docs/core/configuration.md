@@ -109,7 +109,7 @@ It's possible to override some of the properties using corresponding environment
 `parallel` prop override. Could be: `None` or `Suite`
 ### UNICORN_THREADS
 `threads` prop override.
-### UNICORN_TESTS_DEPENDENCY - Skip, DoNotRun, Run
+### UNICORN_TESTS_DEPENDENCY
 `testsDependency` prop override. Could be: `Skip`, `DoNotRun` or `Run`
 
 ## Reset
