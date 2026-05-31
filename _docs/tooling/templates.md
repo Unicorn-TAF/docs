@@ -28,7 +28,7 @@ Available templates are:
 # Tests
 
 ## Project
-To create new tests project use `unicorn` template. The template provides with ability to initialize the project with built-in integration with reporting tools: Allure, ReportPortal or TestIT. Corresponding reporter initialization config template is also added if reporting integration is specified. The template creates a project with predefined `[TestsAssembly]` class, empty suite class and test suite showcase example.
+To create new tests project use `unicorn` template. The template provides with ability to initialize the project with built-in integration with reporting tools: Allure, ReportPortal or TestIT. Corresponding reporter initialization config template is also added if reporting integration is specified. The template creates a project with predefined `[TestAssembly]` class, empty suite class and test suite showcase example.
 
 Available template options:
 

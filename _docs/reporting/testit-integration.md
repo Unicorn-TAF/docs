@@ -31,7 +31,7 @@ using Unicorn.Taf.Api;
 
 namespace Tests
 {
-    [TestsAssembly]
+    [TestAssembly]
     public static class TestsAssembly
     {
         private static ITestReporter reporter;

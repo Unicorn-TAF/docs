@@ -2,7 +2,7 @@
 title: Assertions
 category: Testing
 weight: 3
-order: 4
+order: 5
 ---
 
 Unicorn provides with built-in assertions mechanism to perform various types of checks in tests. These assertions are designed to be simple and easy to use, and they can be used to check the state of your application, the behavior of your code, and the correctness of your data.
