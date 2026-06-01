@@ -87,3 +87,4 @@ new Retrier(5)
     .OnExceptions(typeof(SqlException), typeof(TimeoutException))
     .DoBeforeRetry(() => LogRetryAttempt())
     .Execute(() => DatabaseQuery());
+```

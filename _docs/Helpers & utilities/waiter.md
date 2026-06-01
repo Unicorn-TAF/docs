@@ -84,3 +84,4 @@ wait.Until(() =>
     // Will retry on WebDriverException and ElementNotFoundException
     return FindElement(By.Id("submit"));
 });
+```

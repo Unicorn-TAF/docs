@@ -14,23 +14,26 @@ Namespace: `Unicorn.Taf.Core`
 ## Events
 
 ### Suite Events
+
 | Event | Delegate | Description |
-| --- | --- | --- | 
+|-------|----------|-------------| 
 | OnSuiteStart | UnicornSuiteEvent | Invoked before suite execution |
 | OnSuiteFinish | UnicornSuiteEvent | Invoked after suite execution |
 | OnSuiteSkip | UnicornSuiteEvent | Invoked when suite is skipped |
 
 ### Suite Method Events
+
 | Event | Delegate | Description |
-| --- | --- | --- |
+|-------|----------|-------------| 
 | OnSuiteMethodStart | UnicornSuiteMethodEvent | Invoked before suite method execution |
 | OnSuiteMethodFinish | UnicornSuiteMethodEvent | Invoked after suite method execution |
 | OnSuiteMethodPass | UnicornSuiteMethodEvent | Invoked when suite method passes |
 | OnSuiteMethodFail | UnicornSuiteMethodEvent | Invoked when suite method fails |
 
 ### Test Events
+
 | Event | Delegate | Description |
-| --- | --- | --- |
+|-------|----------|-------------| 
 | OnTestStart | TestEvent | Invoked before test execution |
 | OnTestFinish | TestEvent | Invoked after test execution |
 | OnTestPass | TestEvent | Invoked when test passes |
@@ -38,8 +41,9 @@ Namespace: `Unicorn.Taf.Core`
 | OnTestSkip | TestEvent | Invoked when test is skipped |
 
 ### Step Events
+
 | Event | Delegate | Description |
-| --- | --- | --- |
+|-------|----------|-------------| 
 | OnStepStart | StepEvent | Invoked before test step execution |
 | OnStepFinish | StepEvent | Invoked after test step execution |
 | OnStepFail | StepFailEvent | Invoked when test step fails |
